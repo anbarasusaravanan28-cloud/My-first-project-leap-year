@@ -1,0 +1,31 @@
+class Solution {
+    public int diagonalSum(int[][] mat) {
+        int s=0;
+        for(int i=0;i<mat.length;i++){
+             for(int j=0;j<mat[0].length;j++){
+                if(i==j||i+j==mat.length-1){
+                    s=s+mat[i][j];
+                }
+             }   
+
+        }
+         return s;
+       
+    }
+}
+
+LEETCODE - 2319
+
+
+class Solution {
+    public boolean checkXMatrix(int[][] grid) {
+        for(int i=0;i<grid.length;i++){
+            for(int j=0;j<grid[i].length;j++){
+                if(i==j||i+j==grid.length-1){
+                    if(grid[i][j]==0){
+                        return false;
+                    }
+                }
+                else{
+                    if(grid[i][j]!=0){
+                        return fa…
